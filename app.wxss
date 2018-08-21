@@ -1,0 +1,26 @@
+input{
+font-size: 30rpx;
+border: 1rpx solid #D9D9D9;
+}
+.inputTitle{
+  margin-bottom: 5rpx;
+  font-size: 30rpx;
+}
+.inputSection{
+  padding:15rpx 30rpx 20rpx 30rpx;
+  border-bottom: 1rpx solid #D9D9D9;
+}
+textarea{
+font-size: 30rpx;
+border: 1rpx solid #D9D9D9;
+width: 100%;
+height: 120rpx;
+}
+.formTitle{
+  padding:15rpx 30rpx 20rpx 30rpx;
+  border-bottom: 1rpx solid #D9D9D9;
+}
+.formTitle text{
+  font-size: 28rpx;
+  color: gray;
+}

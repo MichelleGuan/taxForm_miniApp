@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/landing/landing",
+    "pages/step1/step1",
+    "pages/step2/step2",
+    "pages/step1_valid/step1_valid",
+    "pages/picture/picture",
+    "pages/step1_details/step1_details",
+    "pages/step2_adress/step2_adress",
+    "pages/step2_person/step2_person",
+    "pages/step2_bank/step2_bank",
+    "pages/terms/terms",
+    "pages/introduce/introduce",
+    "pages/faq/faq"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#fff"
+  }
+}

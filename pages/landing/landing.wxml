@@ -1,0 +1,19 @@
+<!--page/landing/landing.wxml-->
+<view class="container">
+    <view class="logo">
+        <image src="/assets/images/GST_RegundHelper_Icon.png" />
+    </view>
+    <view class="page-body">
+        <block wx:for="{{ components }}" wx:key="">
+            <wux-cell-group title="{{ item.title }}">
+                <block wx:for="{{ item.children }}" wx:key="" wx:for-item="child">
+                    <wux-cell title="{{ child.title }}" extra="{{ child.remark }}" is-link url="{{ child.url }}"></wux-cell>
+                </block>
+            </wux-cell-group>
+        </block>
+    </view>
+   <view class='remove'>从智能手机上删除退款数据</view>
+   <button class='removeBtn' bindtap='clearTax'>删除税务发票</button>
+   <button class='removeBtn' bindtap='clearClaim'>删除申请</button>
+   <view class='faq' bindtap='faq'>FAQ常见问题</view>
+</view>

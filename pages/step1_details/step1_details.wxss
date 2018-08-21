@@ -1,0 +1,11 @@
+/* pages/step1_details/step1_details.wxss */
+page{
+height: 100%;
+position: relative;
+}
+.btn{
+  padding: 0;
+  position: absolute;
+  bottom: -19rpx;
+  width: 100%;
+}

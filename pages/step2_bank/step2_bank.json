@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "GST Refund Helper",
+  "usingComponents": {
+    "wux-cell": "../../dist/cell/index",
+    "wux-button": "../../dist/button/index"
+  }
+}

@@ -1,0 +1,11 @@
+/* pages/step2_adress/step2——adress.wxss */
+page{
+height: 100%;
+position: relative;
+}
+.btn{
+  padding: 0;
+  position: absolute;
+  bottom: -80rpx;
+  width: 100%;
+}

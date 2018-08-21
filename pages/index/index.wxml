@@ -1,0 +1,18 @@
+<!--page/index/index.wxml-->
+<view class="container">
+    <view class="logo">
+        <image src="/assets/images/GST_RegundHelper_Icon.png" />
+    </view>
+    <view class='validView'>
+<text class='validText'>\n 如果您符合资格，这个退款助手应用程序可以帮助您从澳大利亚政府退回GST。
+•无需在机场排队提交您的退款申请。
+•无需向澳大利亚税务局交退款申请费。 
+•不退款，不收费。如果退款申请不成功，您将不支付给我们任何费用。如果退款申请成功，我们的费用将从退款中扣取。
+
+请阅读我们的</text><view class='terms' bindtap='terms'>条款与条件</view><text>，并确保您在使用我们的服务之前了解这些条款。\n \n</text>
+
+ <switch color='#0A1016' bindchange="switch1Change" />我接受GST退款助手的条款与条件
+              
+</view>
+</view>
+<wux-button block outline type="positive" bindtap="goLanding" disabled='{{disable}}'  class='btn'>确 认</wux-button> 

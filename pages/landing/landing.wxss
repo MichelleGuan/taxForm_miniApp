@@ -1,0 +1,32 @@
+/* page/landing/landing.wxss */
+.logo{
+  text-align: center;
+}
+.logo image{
+  width: 300rpx;
+  height: 300rpx;
+}
+.remove{
+margin-top: 40rpx;
+padding:30rpx 30rpx 18rpx;
+font-size:28rpx;
+color:#888;
+width:100%;
+box-sizing:border-box;
+}
+.removeBtn{
+  margin: 10rpx 0 10rpx 0;
+  text-align: left;
+  background-color: white;
+  font-size: 30rpx;
+}
+.faq{
+  padding: 0;
+  position: absolute;
+  bottom: 40rpx;
+  width: 100%;
+  font-size: 30rpx;
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
+}

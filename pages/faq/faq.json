@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "FAQ",
+  "usingComponents": {
+    "wux-accordion-group": "../../dist/accordion-group/index",
+    "wux-accordion": "../../dist/accordion/index",
+          "wux-row": "../../dist/row/index",
+          "wux-col": "../../dist/col/index"
+  }
+}

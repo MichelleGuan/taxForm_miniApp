@@ -1,0 +1,18 @@
+<!--page/step1/step1.wxml-->
+<view class='container'>
+<view class='notice'>
+<text class='noticeText'>注意事项：
+1）请提交</text><view class='valid' bindtap="gotoValid">有效税务发票</view>
+<text class='noticeText'>\n 2）对于大额发票(AUD$1000或以上)，机构的名称和地址必须包含在税务发票上。</text>
+</view>
+<view class="page-body">
+        <block wx:for="{{ components }}" wx:key="">
+            <wux-cell-group title="{{ item.title }}">
+                <block wx:for="{{ item.children }}" wx:key="" wx:for-item="child">
+                    <wux-cell title="{{ child.title }}" extra="{{ child.remark }}" is-link url="{{ child.url }}"></wux-cell>
+                </block>
+            </wux-cell-group>
+        </block>
+    </view>
+</view>
+<wux-button block outline type="positive" bindtap="submit"  class='btn'>提交税务信息</wux-button> 

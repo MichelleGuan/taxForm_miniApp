@@ -1,0 +1,27 @@
+<!--pages/step2_person/step2_person.wxml-->
+
+<wux-calendar id="wux-calendar" />
+<wux-select id="wux-select1" />
+
+
+<view class="page__bd step1_detail">
+<view class='formTitle'>{{current}}</view>
+  <wux-cell-group title="基本信息">
+    <wux-cell title="称呼*" isLink="true" extra="{{ value1 }}" bind:click="onClick1"></wux-cell>
+       <view class="inputSection">
+      <view class="inputTitle" >姓名*</view> 
+      <input name="input" bindinput="name" value="{{name}}"/>
+    </view>
+    <view class="inputSection">
+      <view class="inputTitle">澳大利亚税号(如果负责人为澳大利亚居民)</view> 
+      <input name="input" bindinput="taxNumber" value="{{taxNumber}}"/>
+    </view>
+   <wux-cell title="出生日期" extra="{{ value2 }}" bind:click="openCalendar1" isLink='true'></wux-cell>
+    <view class="inputSection">
+      <view class="inputTitle" >电子邮件地址*</view> 
+      <input name="input" bindinput="email" value="{{email}}"/>
+    </view>
+      <wux-cell title="家庭住址*" is-link url="/pages/step2_adress/step2_adress?gid={{personAdress}}" open-type="navigateTo"></wux-cell>
+</wux-cell-group>
+</view>
+<wux-button block outline type="positive" bindtap="goBack" class='btn'>确 认</wux-button>

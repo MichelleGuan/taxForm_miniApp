@@ -1,0 +1,9 @@
+/* pages/terms/terms.wxss */
+.validText{
+font-size: 25rpx;
+}
+.validView{
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  padding: 20rpx;
+}

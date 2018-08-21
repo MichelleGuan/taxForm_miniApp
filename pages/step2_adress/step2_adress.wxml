@@ -1,0 +1,33 @@
+<!--pages/step2_adress/step2——adress.wxml-->
+
+<view class='formTitle'>{{current}}
+<text>\n该地址须是街道地址，不能是一个邮箱号码。如果您在家办公，该地址可以是您的家庭住址。</text></view>
+ <view class="inputSection">
+      <view class="inputTitle">地址行1*</view> 
+      <input name="input" bindinput='adressLine1' value='{{adressLine1}}' />
+    </view>
+     <view class="inputSection">
+      <view class="inputTitle">地址行2(可选)</view> 
+      <input name="input"  bindinput='adressLine2' value='{{adressLine2}}' />
+    </view>
+     <view class="inputSection">
+      <view class="inputTitle" >郊区/城镇/地区*</view> 
+      <input name="input" bindinput='district' value='{{district}}'/>
+    </view>
+     <view class="inputSection">
+      <view class="inputTitle">国家*</view> 
+      <input name="input"  bindinput='country' value='{{country}}'/>
+    </view>
+     <view class="inputSection">
+      <view class="inputTitle">营业电话*</view> 
+      <input name="input"  bindinput='officePhone' value='{{officePhone}}'/>
+    </view>
+     <view class="inputSection">
+      <view class="inputTitle">手机号码*</view> 
+      <input name="input"  bindinput='mobilephone' value='{{mobilephone}}'/>
+    </view>
+     <view class="inputSection">
+      <view class="inputTitle">电子邮件地址*</view> 
+      <input name="input"  bindinput='email' value='{{email}}'/>
+    </view>
+<wux-button block outline type="positive" bindtap="goBack" class='btn'>确 认</wux-button> 

@@ -1,0 +1,24 @@
+/* page/step1/step1.wxss */
+.valid{
+  text-decoration: underline;
+  color: rgb(106, 185, 250);
+  display: inline;
+  font-size: 30rpx;
+}
+.noticeText{
+  font-size:30rpx;
+}
+.notice{
+  margin-left: 85rpx;
+  margin-right: 85rpx;
+  margin-top: 30rpx;
+  padding: 20rpx;
+  box-shadow: 0 0 20px #CCC;
+}
+.btn{
+  padding: 0;
+  position: absolute;
+  bottom: -19rpx;
+  width: 100%;
+}
+

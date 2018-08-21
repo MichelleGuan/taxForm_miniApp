@@ -1,0 +1,31 @@
+<!--pages/step1_details/step1_details.wxml-->
+<wux-select id="wux-select1" />
+<wux-select id="wux-select2" />
+<wux-select id="wux-select3" />
+
+<view class="page__bd step1_detail" >
+            <wux-cell title="称呼*" isLink="true" extra="{{ value1 }}" bind:click="onClick1"></wux-cell>
+  <view class="inputSection">
+    <view class="inputTitle">您的姓氏*</view>
+    <input name="input" placeholder="请输入您护照上的姓氏" bindinput="firstname" value="{{firstname}}"/>
+  </view>
+  <view class="inputSection">
+    <view class="inputTitle" >您的名字*</view>
+    <input name="input"  bindinput="lastname" value="{{lastname}}" placeholder="请输入您护照上的名字" />
+  </view>
+  <view class="inputSection">
+   <view class="inputTitle" >您的邮箱*</view>
+    <input name="input" bindinput="email" value="{{email}}" placeholder="请输入您的工作邮箱" />
+  </view>
+  <view class="inputSection">
+    <view class="inputTitle" type="number">手机号码*</view>
+    <input name="input" type="text" bindinput="phone" value="{{phone}}"  placeholder="请输入您包含国家代码的手机号码" />
+  </view>
+  <view class="inputSection">
+    <view class="inputTitle">机构/企业名字*</view>
+    <input name="input" bindinput="company" value="{{company}}" placeholder="请输入您所在机构/企业的名字" />
+  </view>
+            <wux-cell title="您在机构中的职位*" isLink="true" extra="{{ value2 }}" bind:click="onClick2"></wux-cell>
+            <wux-cell title="首选联系方式*" isLink="true" extra="{{ value3 }}" bind:click="onClick3"></wux-cell>      
+    </view>
+<wux-button block outline type="positive" bindtap="goBack" class='btn'>确 认</wux-button> 

@@ -1,0 +1,156 @@
+<!--pages/faq/faq.wxml-->
+<view class='formTitle'>常见问题解答</view>
+<wux-accordion-group default-current="{{['0']}}">
+  <wux-accordion title="GST是什么" content="澳大利亚的商品和服务税(GST)旨在为当地消费者征收消费税。在澳大利亚出售的大部分商品和服务都有10%的消费税，消费税已包含在商品及服务的价格中。">
+  </wux-accordion>
+  <wux-accordion title="什么是GST退款">
+    <view>其他与GST退款有相同含义的术语是:</view>
+    <view>1） GST索回</view>
+    <view>2） GST返款</view>
+    <view>在一些国家，GST被称为VAT（增值税）。这两者意思相同。</view>
+  </wux-accordion>
+  <wux-accordion title="哪些人可以获得GST退款?" content="所有已向澳大利亚政府支付GST的外国机构(相对于澳大利亚来说)均有资格获得其澳大利亚GST的退款。"></wux-accordion>
+  <wux-accordion title="GST退款的追溯时间" content="只要您存有发票，您可以要求退回4年内的费用。"></wux-accordion>
+  <wux-accordion title="关于我们">
+   <view>GST Recoveries Australia Pty Ltd (“退款助手”的运行公司) 是一家总部位于墨尔本的金融服务公司。我们专门帮助外国机构退回在澳大利亚支付的GST。</view>
+    <view>GST Recoveries Australia Pty Ltd的两大股东在澳大利亚和国际上拥有超过40年的税收和金融行业经验。</view>
+    <view>我们是一家获得澳大利亚政府税务从业人员委员会(TPB)许可的注册(持牌)税务代理公司。我们的许可号码是25795313。若您希望证实我们的注册信息，或了解更多关于我们的注册信息，请登录:https://www.tpb.gov.au/search-register。</view>
+    </wux-accordion>
+  <wux-accordion title="关于这个应用程序" content="通过我们的app“退款助手“，我们为所有合格的客户简化了澳大利亚GST的退款申请流程。过去耗时且复杂的工作现在变得容易了。"></wux-accordion>
+  <wux-accordion title="哪些国家可以使用这个应用程序?" content="我们的客户大多来自这7个国家: 中国，新西兰，马来西亚，新加坡，印尼，英国，印度，如果您的国家不在上面，我们仍然可以帮助您。请联系我们。"></wux-accordion>
+  <wux-accordion title="哪些人可以使用该应用程序申请退款?" content="来澳机构的任何有智能手机的人都可以! 包括CEO、企业主、财务总监、财务总监、内部会计、行政助理等。"></wux-accordion>
+  <wux-accordion title="主要的商业条款是什么?">
+   <view>1. 没有预付费用。</view>
+    <view>2．我们接受的最低票据总额为5000澳币 (如果您的总发票金额少，请联系我们，我们可以讨论更多的选择。)</view>
+    <view>3．只有退款申请被澳大利亚税务局成功处理，并获得退款，我们才收费，剩余部分为您的退款。</view>
+    <view>4．净退款金额将转换为您的本地货币(根据我们的外汇供应商获得的即时汇率)。然后通过国际电汇将其转至您指定的银行账户。</view>
+  </wux-accordion>
+
+  <wux-accordion title="您能退回多少钱?">
+   <view class='priceForm'>
+    <wux-row>
+      <wux-col span="6">
+        <view class="Title">发票总金额<text>\n(AUD)</text></view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="Title">您的净退款金额<text>\n(RMB)</text></view>
+      </wux-col>
+    </wux-row>
+ <wux-row>
+      <wux-col span="6">
+        <view class="content">$40000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥13091</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$30000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥9818</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$20000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥6545</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$10000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥3011</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$9000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥2710</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$8000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥2409</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$7000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥2108</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$6000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥1807</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$5000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥1505</view>
+      </wux-col>
+    </wux-row>
+    <text class='validText'>*基于AUD1=￥4.8的汇率 \n 当您所提交的GST退款金额超过AUD15,000时，您的退款比率也相应增加。其他金额请直接联系我们。</text>
+</view>
+     </wux-accordion>
+
+  <wux-accordion title="是否需要发票/收据原件?">
+    <view>在退款申请过程中，我们可以使用原始发票/收据的电子副本。我们建议您保留发票/收据的纸质票据，直到退款过程完成为止。</view>
+  </wux-accordion>
+  <wux-accordion title="访客还能退回其他类型的费用吗">
+    <text>GST退款也适用于其他类型的费用，例如:
+●餐饮
+●出租车/优步费用
+●租车
+●干洗
+●会议费用
+这些类型的费用的退税标准与酒店住宿费的GST退款要求相同。费用须由一个机构最终支付，并且访问澳大利亚的目的必须是与工作、商业或会议相关的。</text>
+  </wux-accordion>
+   <wux-accordion title="其他可能符合GST退款的消费类型">
+    <text>第一类别：由机构的业主/雇员进行的在澳大利亚的商务旅行。
+这是与退款相关的最大消费领域。
+
+示例1
+ABC上海有限公司是一家中国家具制造公司。ABC上海有限公司打算向澳大利亚出口家具，并已经确定了澳大利亚的潜在经销商。ABC上海有限公司向悉尼派出高级销售副总裁李杰森(Jason Li)和销售经理吴查理(Richard Wu)，与潜在的澳大利亚分销商会面。在这次悉尼之旅中，杰森和理查在澳大利亚的费用包括酒店住宿、会议套房租用、餐费、租车、出租车费和悉尼营销咨询费。这些已发生费用的澳大利亚GST可退还给ABC上海有限公司。
+示例2
+印尼第一教会（First Church Indonesia）派牧师乔希·阿贡和另外两名董事会成员前往珀斯，参观当地的印尼教会。在澳大利亚，印尼第一教会为阿贡牧师和两名董事会成员支付所有费用。在本案例中，第一印尼教会支付的澳大利亚GST是可退还的。
+示例3
+大印度银行（Greater India Bank Ltd）是一家总部设在新德里的印度银行，在印度和海外都有分支机构。海外分支机构在技术上独立于其在印度的母公司。在澳大利亚，大印度银行(Greater India Bank Ltd)作为“大印度银行(澳大利亚)有限公司”(Greater India Bank, Australia, Ltd.)运营，由母公司为其澳大利亚业务提供管理支持。印度的高级管理人员每年都要进行多次访问，并为澳大利亚分公司提供支持。他们在澳大利亚期间的费用由母公司支付。在澳大利亚的工作行程中，这些费用的GST应退还给大印度银行(Greater India Bank Ltd)。
+
+第二类别
+供应商发票。
+如果您的机构是澳大利亚以外的一家直接从澳大利亚企业购买产品或设备的机构，那么购买发票可能包含GST。
+
+例子:
+XYZ Premier Developer Ltd是一家马来西亚建筑公司，其最新的开发项目是吉隆坡的豪华公寓大楼。所有的公寓都配备了手工大理石门把手。这些门把手都是从墨尔本的袋鼠建筑供应有限公司（Kangaroo Building Supply Pty Ltd）购买的，并由澳大利亚的运输公司Federer Express Australia运回马来西亚。两家澳大利亚公司的发票都包含GST。这个GST应该退还给XYZ Premier Developer有限公司。
+
+第三类别--会议/会议/展览。
+会议、奖励旅行、会议或展览/活动。
+
+示例1
+帕特里克·李医生是一名骨科医生，在新加坡工作，他是一名私人医生。他参加了在澳大利亚黄金海岸举行的医学会议。他在澳大利亚的花费 (会议费用、酒店住宿、餐厅账单、交通费用等)应该免收GST。
+示例2
+快乐工业(马来西亚)有限责任公司Happy Industries (Malaysia) LLC派遣4名员工前往澳大利亚参加会议(与公司业务有关)，并举办展览。有关这些活动的费用可退还。
+
+注:GST不退还与员工奖励旅行有关的费用。这是因为这类旅行没有进行任何商业活动。
+</text>
+  </wux-accordion>
+</wux-accordion-group>

@@ -1,0 +1,28 @@
+/* page/index/index.wxss */
+.logo{
+  text-align: center;
+}
+.logo image{
+  width: 300rpx;
+  height: 300rpx;
+}
+.validText{
+font-size: 28rpx;
+}
+.validView{
+  font-size: 28rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  padding: 20rpx;
+}
+.terms{
+  display: inline;
+  color: blue;
+  text-decoration: underline;
+}
+.btn{
+  padding: 0;
+  position: absolute;
+  bottom: -19rpx;
+  width: 100%;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "GST Refund Helper",
+  "usingComponents": {
+    "wux-button": "../../dist/button/index"
+  }
+}

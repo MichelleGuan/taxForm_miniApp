@@ -1,0 +1,19 @@
+<!--pages/step2_bank/step2_bank.wxml-->
+<view class='formTitle'>银行信息(以便我们退款)</view>
+   <view class="inputSection">
+      <view class="inputTitle">银行名称*</view> 
+      <input name="input"  bindinput='bankName' value='{{bankName}}'/>
+    </view>
+     <view class="inputSection">
+      <view class="inputTitle">BIC/Swiftcode(8-11位)*</view> 
+      <input name="input"  bindinput='swift' value='{{swift}}'/>
+    </view>
+     <view class="inputSection">
+      <view class="inputTitle">CNAPS码(12位)*</view> 
+      <input name="input"  bindinput='cnaps' value='{{cnaps}}'/>
+    </view>
+     <view class="inputSection">
+      <view class="inputTitle">银行帐户号码*</view> 
+      <input name="input"  bindinput='account' value='{{account}}' />
+    </view>
+<wux-button block outline type="positive" bindtap="goBack" class='btn'>确 认</wux-button>

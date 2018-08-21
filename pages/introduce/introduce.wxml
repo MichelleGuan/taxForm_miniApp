@@ -1,0 +1,115 @@
+<!--pages/introduce/introduce.wxml-->
+<view class="container">
+  <view class='validView'>
+    <text class='validText'>每个来澳大利亚工作、出差或参加会议的个人或机构都可以从澳大利亚税务局退回在澳大利亚期间已支付的酒店费用的消费税。
+
+您需要满足的主要条件是您支出的酒店费用必须由您所在的单位或机构支付。如果您个人先付了费用，单位或机构随后报销，您仍然可以申请GST退税。\n</text>
+
+<view class='priceForm'>
+    <wux-row>
+      <wux-col span="6">
+        <view class="Title">发票总金额<text>\n(AUD)</text></view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="Title">您的净退款金额<text>\n(RMB)</text></view>
+      </wux-col>
+    </wux-row>
+ <wux-row>
+      <wux-col span="6">
+        <view class="content">$40000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥13091</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$30000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥9818</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$20000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥6545</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$10000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥3011</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$9000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥2710</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$8000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥2409</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$7000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥2108</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$6000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥1807</view>
+      </wux-col>
+    </wux-row>
+     <wux-row>
+      <wux-col span="6">
+        <view class="content">$5000</view>
+      </wux-col>
+      <wux-col span="6">
+        <view class="content">￥1505</view>
+      </wux-col>
+    </wux-row>
+ <text class='validText'>*基于AUD1=￥4.8的汇率 \n 当您所提交的GST退款金额超过AUD15,000时，您的退款比率也相应增加。其他金额请直接联系我们。</text>
+</view>
+
+    <text class='validText'>\n退款助手可以帮助退回以下类型的费用的GST，例如:
+●酒店住宿
+●会议费用
+●餐饮
+●出租车/优步费用
+●租车
+●干洗
+●其他与业务或生意相关的费用
+与酒店/住宿费用类似，其他费用也需由机构支付。另外，也接受个人(雇员或企业主)先付款，然后由机构报销的情况。
+注：这些费用必须与工作、商务或会议有关。
+
+三个简单的步骤退回GST:</text>
+<view class='steps'>
+    <wux-steps>
+      <wux-step status="拍照片" title="拍照片"></wux-step>
+      <wux-step status="提供资料" title="提供资料"></wux-step>
+      <wux-step status="获得退款" title="获得退款"></wux-step>
+    </wux-steps>
+</view>
+<text class='validText'>\n一旦您完成了这两个步骤，请等待您的退款。澳大利亚税务局通常需要6-10周的时间来处理退款。一旦我们收到您的退款，将会通过电汇转至您的机构。退款结算明细也将发送到您的机构。
+</text>
+  </view>
+<wux-button block outline type="positive" bindtap="goLanding" class='btn'>开 始</wux-button>
+</view>

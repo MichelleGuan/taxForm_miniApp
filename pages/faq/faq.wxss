@@ -1,0 +1,13 @@
+/* pages/faq/faq.wxss */
+.priceForm{
+  margin-top: 30rpx;
+}
+.content{
+  border-bottom: 0.5px black solid;
+}
+.Title{
+   border-top: 0.5px black solid;
+   border-bottom: 0.5px black solid;
+  font-size: 35rpx;
+  background-color: lightblue;
+}

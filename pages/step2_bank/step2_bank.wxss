@@ -1,0 +1,11 @@
+/* pages/step2_bank/step2_bank.wxss */
+page{
+height: 100%;
+position: relative;
+}
+.btn{
+  padding: 0;
+  position: absolute;
+  bottom: 420rpx;
+  width: 100%;
+}

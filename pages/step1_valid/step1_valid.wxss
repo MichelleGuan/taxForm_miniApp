@@ -1,0 +1,9 @@
+/* pages/step1_valid/step1_valid.wxss */
+.validText{
+font-size: 25rpx;
+}
+.validView{
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  padding: 20rpx;
+}

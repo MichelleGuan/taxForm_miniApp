@@ -1,0 +1,73 @@
+<!--pages/step1_details/step1_details.wxml-->
+<wux-select id="wux-select1" />
+<wux-select id="wux-select2" />
+<wux-select id="wux-select3" />
+<wux-select id="wux-select4" />
+<wux-select id="wux-select5" />
+<wux-select id="wux-select6" />
+<wux-select id="wux-select7" />
+
+<view class="page__bd step1_detail">
+  <wux-cell-group title="机构基本信息">
+    <wux-cell title="机构类型*" isLink="true" extra="{{ value1 }}" bind:click="onClick1"></wux-cell>
+       <view class="inputSection">
+      <view class="inputTitle">机构的法律名称*</view> 
+      <input name="input" placeholder="请输入法律文件中的机构名称"  bindinput='company' value='{{company}}'/>
+    </view>
+      <wux-cell title="机构的法定地址*" is-link url="/pages/step2_adress/step2_adress?gid=机构的法定地址" open-type="navigateTo"></wux-cell>
+      <wux-cell title="银行信息*" label="请填写正确银行信息以便我们退款" is-link url="/pages/step2_bank/step2_bank" open-type="navigateTo"></wux-cell>
+<wux-cell title="旅行或出差的目的*"  isLink="true" extra="{{ value2 }}" bind:click="onClick2"></wux-cell>
+<wux-cell title="这是该机构第一次派人前往澳大利亚吗?"  isLink="true" extra="{{ value3 }}" bind:click="onClick3"></wux-cell>
+<wux-cell title="机构或企业经营的主要行业是什么?"  isLink="true" extra="{{ value4 }}" bind:click="onClick4"></wux-cell> 
+</wux-cell-group>
+      <view class="inputSection">
+      <view class="inputTitle">请描述您所在机构的主要经营活动*
+      <view>(以收入最高的经营活动为主)</view></view> 
+      <textarea name="input" placeholder="请您同时描述您的机构提供的主要产品或服务"  bindinput='mainActivity' value='{{mainActivity}}'></textarea>
+    </view>
+
+<block wx:if="{{value1=='公司'}}">
+ <wux-cell-group title="负责人信息">
+    <wux-cell title="负责人1*" is-link url="/pages/step2_person/step2_person?gid=公司负责人1" open-type="navigateTo"></wux-cell>
+ <wux-cell title="负责人2（可选）" is-link url="/pages/step2_person/step2_person?gid=公司负责人2" open-type="navigateTo"></wux-cell>
+    <wux-cell title="主要负责人*" label="用于税务局查询该机构的GST退款申请时联系" isLink="true" extra="{{ value5 }}" bind:click="onClick5"></wux-cell>
+    </wux-cell-group>
+    <wux-cell-group title="公司材料图片">
+    <wux-cell title="营业执照*" is-link url="/pages/picture/picture?gid=公司营业执照" open-type="navigateTo"></wux-cell>
+ <wux-cell title="销售税/增值税交税证明*" is-link url="/pages/picture/picture?gid=公司销售税/增值税交税证明" open-type="navigateTo"></wux-cell>
+ <wux-cell title="负责人1护照，驾照，或身份证*" is-link url="/pages/picture/picture?gid=公司负责人1护照，驾照，或身份证"  open-type="navigateTo"></wux-cell>
+ <wux-cell title="负责人2护照，驾照，或身份证（可选）" is-link url="/pages/picture/picture?gid=公司负责人2护照，驾照，或身份证" open-type="navigateTo"></wux-cell>
+    </wux-cell-group>
+</block>
+
+<block wx:if="{{value1=='个人'}}">
+<wux-cell-group title="负责人信息">
+    <wux-cell title="个人经营者*" is-link  url="/pages/step2_person/step2_person?gid=个人经营者"  open-type="navigateTo"></wux-cell>
+    </wux-cell-group>
+    <wux-cell-group title="公司材料图片">
+    <wux-cell title="营业执照*" is-link url="/pages/picture/picture?gid=个人经营者营业执照" open-type="navigateTo"></wux-cell>
+ <wux-cell title="销售税/增值税交税证明*" is-link url="/pages/picture/picture?gid=个人经营者销售税/增值税交税证明" open-type="navigateTo"></wux-cell>
+ <wux-cell title="负责人护照，驾照，或身份证*" is-link url="/pages/picture/picture?gid=个人经营者护照，驾照，或身份证" open-type="navigateTo"></wux-cell>
+ </wux-cell-group>
+</block>
+
+<block wx:if="{{value1=='非盈利组织'}}">
+<wux-cell-group title="负责人信息">
+    <wux-cell title="办公人员1*" is-link url="/pages/step2_person/step2_person?gid=非盈利组织办公人员1"  open-type="navigateTo"></wux-cell>
+    <wux-cell title="办公人员1职位*" isLink="true" extra="{{ value6 }}" bind:click="onClick6"></wux-cell>
+ <wux-cell title="办公人员2*" is-link url="/pages/step2_person/step2_person?gid=非营利组织办公人员2" open-type="navigateTo"></wux-cell>
+ <wux-cell title="办公人员2职位*" isLink="true" extra="{{ value7 }}" bind:click="onClick7"></wux-cell>
+    </wux-cell-group>
+    <wux-cell-group title="公司材料图片">
+    <wux-cell title="营业执照*" is-link url="/pages/picture/picture?gid=非盈利组织营业执照" open-type="navigateTo"></wux-cell>
+ <wux-cell title="销售税/增值税交税证明*" is-link url="/pages/picture/picture?gid=非盈利组织销售税/增值税交税证明" open-type="navigateTo"></wux-cell>
+ <wux-cell title="办公人员1护照，驾照，或身份证*" is-link url="/pages/picture/picture?gid=非盈利组织办公人员1证件" open-type="navigateTo"></wux-cell>
+ <wux-cell title="办公人员2护照，驾照，或身份证*" is-link url="/pages/picture/picture?gid=非盈利组织办公人员2证件" open-type="navigateTo"></wux-cell>
+    </wux-cell-group>
+</block>
+ <view class="inputSection">
+      <view class="inputTitle">邮箱*</view> 
+      <input name="input" placeholder="我们将向这一邮件地址发送相关邮件" bindinput='email' value='{{email}}'/>
+    </view>
+<wux-button block outline type="positive" bindtap="submit" class='btn'>提交机构信息</wux-button>
+</view>

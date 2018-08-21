@@ -1,0 +1,16 @@
+<!--pages/step1_invoice/step1_invoice.wxml-->
+<view class='formTitle'>{{current}}</view>
+<view class="page__bd page__bd_spacing">
+<view class='imageTotal'> 
+<view class='imageBlock'>
+<view class="img" wx:for="{{tempFilePaths}}" wx:for-item="item" wx:key="*this">
+    <image src="{{item }}" bindtap="listenerButtonPreviewImage" data-index="{{index}}" style="width: 100%;"/>
+    <view class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></view>
+  </view>
+   </view> 
+</view> 
+        <wux-button block outline type="positive" bindtap="chooseimage" class='btn'>拍照或选择税务发票</wux-button>
+        <wux-button block outline type="positive" bindtap="done" class='btn'>提 交</wux-button>
+    </view>
+    <canvas style="width:2px;height:2px" canvas-id="judgeCanvas"></canvas>
+<canvas style="width: 300px; height: 200px;" canvas-id="myCanvas"></canvas>

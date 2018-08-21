@@ -1,0 +1,11 @@
+/* pages/step2_person/step2_person.wxss */
+page{
+height: 100%;
+position: relative;
+}
+.btn{
+  padding: 0;
+  position: absolute;
+  bottom: -19rpx;
+  width: 100%;
+}

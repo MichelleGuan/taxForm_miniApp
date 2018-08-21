@@ -1,0 +1,40 @@
+/* pages/introduce/introduce.wxss */
+.validText{
+font-size: 28rpx;
+}
+.priceForm{
+  margin-top: 30rpx;
+}
+.content{
+  border-bottom: 0.5px black solid;
+}
+.Title{
+   border-top: 0.5px black solid;
+   border-bottom: 0.5px black solid;
+  font-size: 35rpx;
+  background-color: lightblue;
+}
+.validView{
+  font-size: 28rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  padding: 20rpx;
+}
+.terms{
+  display: inline;
+  color: blue;
+  text-decoration: underline;
+}
+.btn{
+  padding: 0;
+  position: absolute;
+  bottom: -150rpx;
+  width: 100%;
+}
+.steps{
+  display: block;
+  margin-top: 30rpx;
+}
+.container{
+  position: relative;
+}
